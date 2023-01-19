@@ -1,6 +1,6 @@
 name: Bug Report Form
 description: Form that guides you to create a bug report.
-title: "[Bug]: "
+title: "[Bug] "
 # Source partially taken from: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 body:
   - type: markdown
