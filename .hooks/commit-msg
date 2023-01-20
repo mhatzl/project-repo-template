@@ -48,7 +48,7 @@ RED="\033[31m"
 YELLOW="\033[33m"
 CLEAR="\033[0m"
 
-if ! head -1 "$1" | grep -qE "^(feat|fix|ci|build|chore|doc|test|style|refactor|perf|revert)[!]?: .{1,}$"; then
+if ! head -1 "$1" | grep -qE "^(feat|fix|depend|build|perf|ci|test|refactor|style|doc|repo|revert|chore)[!]?: .{1,}$"; then
     echo -e "${RED}\nERROR: Given commit type is wrong!${CLEAR}\n" >&2
     print_help true
 
