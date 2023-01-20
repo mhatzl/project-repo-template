@@ -1,0 +1,36 @@
+on:
+  push:
+    branches:
+      - main
+
+# See: https://github.com/google-github-actions/release-please-action
+name: Release Please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        with:
+          # Change type and name depending on your repository
+          release-type: simple
+          package-name: project-repo-template
+          # Breaking changes might happen frequently before 1.0.0 => only bump minor
+          bump-minor-pre-major: true
+          changelog-types: >
+            [
+            {"type":"feat","section":"Features","hidden":false},
+            {"type":"fix","section":"Bug Fixes","hidden":false},
+            {"type":"depend","section":"Dependencies","hidden":false},
+            {"type":"build","section":"Build System","hidden":false},
+            {"type":"perf","section":"Performance","hidden":false},
+
+            {"type":"ci","section":"CI","hidden":true},
+            {"type":"test","section":"Testing","hidden":true},
+            {"type":"refactor","section":"Refactoring","hidden":true},
+            {"type":"style","section":"Code Style","hidden":true},
+            {"type":"doc","section":"Documentation","hidden":true},
+            {"type":"repo","section":"Repository","hidden":true},
+            {"type":"revert","section":"Revert","hidden":true},
+            {"type":"chore","section":"Miscellaneous","hidden":true}
+            ]
