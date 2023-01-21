@@ -16,32 +16,32 @@ print_help() {
 
     echo -e "\nWhere '<type>: <head description>' is not longer than 50 characters and <type> is one of:\n" >&2
 
-    echo -e "- feat \t... Use if commit adds a new feature" >&2
-    echo -e "- fix \t... Use if commit fixes a bug of any kind" >&2
-    echo -e "- depend \t... Use if commit makes changes to the external dependencies (e.g. adding/removing packages)" >&2
-    echo -e "- build \t... Use if commit affects the build system" >&2
-    echo -e "- perf \t... Use if commit only improves performance" >&2
-    echo -e "- ci \t... Use if commit makes changes to CI configuration files and/or scripts" >&2
-    echo -e "- test \t... Use if commit adds one ore more test cases" >&2
+    echo -e "- feat \t\t\t... Use if commit adds a new feature" >&2
+    echo -e "- fix \t\t\t... Use if commit fixes a bug of any kind" >&2
+    echo -e "- depend \t\t... Use if commit makes changes to the external dependencies (e.g. adding/removing packages)" >&2
+    echo -e "- build \t\t... Use if commit affects the build system" >&2
+    echo -e "- perf \t\t\t... Use if commit only improves performance" >&2
+    echo -e "- ci \t\t\t\t... Use if commit makes changes to CI configuration files and/or scripts" >&2
+    echo -e "- test \t\t\t... Use if commit adds one ore more test cases" >&2
     echo -e "- refactor \t... Use if commit makes semantic changes that neither fixes a bug nor adds a feature" >&2
-    echo -e "- style \t... Use if commit makes code changes that do not affect the semantic of the code" >&2
-    echo -e "- doc \t... Use if commit only adds or improves documentation" >&2
-    echo -e "- repo \t... Use if commit makes general changes to the repository (e.g. modify issue templates)" >&2
-    echo -e "- revert \t... Use if you want to revert a commit. Write 'Refs: <comma separated hashes of reverted commits>' in '[<optional footer>]'" >&2
-    echo -e "- chore \t... Miscellaneous (should only be used for automatically generated commits)" >&2
+    echo -e "- style \t\t... Use if commit makes code changes that do not affect the semantic of the code" >&2
+    echo -e "- doc \t\t\t... Use if commit only adds or improves documentation" >&2
+    echo -e "- repo \t\t\t... Use if commit makes general changes to the repository (e.g. modify issue templates)" >&2
+    echo -e "- revert \t\t... Use if you want to revert a commit. Write 'Refs: <comma separated hashes of reverted commits>' in '[<optional footer>]'" >&2
+    echo -e "- chore \t\t... Miscellaneous (should only be used for automatically generated commits)" >&2
 
-    echo -e "\n\nNOTE: If your commit fits to more than one <type>, either\n" >&2
-    echo -e "- split commit if commit fits to two or more of types: feat, fix, depend, build, or perf.\n\n" >&2
-    echo -e "- otherwise, choose the first one that fits starting from the top of the list above.\n\n" >&2
+    echo -e "\nNOTE: If your commit fits to more than one <type>, either" >&2
+    echo -e "- split commit if commit fits to two or more of types: feat, fix, depend, build, or perf." >&2
+    echo -e "- otherwise, choose the first one that fits starting from the top of the list above.\n" >&2
 
-    echo -e "NOTE: <type> may be immediately followed by a '!' to indicate breaking changes.\n" >&2 
+    echo -e "NOTE: <type> may be immediately followed by a '!' to indicate breaking changes." >&2 
     echo -e "NOTE: Use '!' instead of writing 'BREAKING CHANGE: <decsription>' in the '[<optional footer>]'.\n" >&2
 
     echo -e "Examples: \n" >&2
     echo -e "feat: improve log message on bad request" >&2
     echo -e "feat!: indicate a breaking change" >&2
     echo -e "fix: fix some bug" >&2
-    echo -e "\nFor more information, see: \nhttps://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines and \nhttps://www.conventionalcommits.org/en/v1.0.0/" >&2
+    echo -e "\nFor more information, see: \nhttps://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines \nhttps://www.conventionalcommits.org/en/v1.0.0/" >&2
 }
 
 RED="\033[31m"
