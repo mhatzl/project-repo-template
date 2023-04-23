@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull_requests: write
     steps:
       - uses: actions/github-script@v6
         with:
