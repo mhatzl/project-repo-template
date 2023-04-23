@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "CLA Assistant"
-        if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event.issue.pull_request
+        if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read and understood the Contributor License Agreement and I hereby accept the Terms.') || github.event.issue.pull_request
         uses: contributor-assistant/github-action@v2.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -26,7 +26,7 @@ jobs:
           signed-commit-message: "repo: $contributorName has signed the CLA in #$pullRequestNo"
           custom-notsigned-prcomment: |
             Thank you for your contribution.
-            Before we are allowed to accept your contribution, we must ask you to read and accept our Contributor License Agreement (CLA).
+            Before we are allowed to accept your contribution, we must ask you to read and accept our [Contributor License Agreement (CLA)](https://gist.github.com/mhatzl/39a956848d28dcebfa7ecdb05e33b464).
             After you have accepted our terms, you will not be asked on further contributions.
 
             After you have carefully read the CLA, create a comment below with the following content:
