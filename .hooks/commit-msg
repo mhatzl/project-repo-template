@@ -27,7 +27,7 @@ print_help() {
     echo -e "- style \t\t... Use if commit makes code changes that do not affect the semantic of the code" >&2
     echo -e "- doc \t\t\t... Use if commit only adds or improves documentation" >&2
     echo -e "- repo \t\t\t... Use if commit makes general changes to the repository (e.g. modify issue templates)" >&2
-    echo -e "- revert \t\t... Use if you want to revert a commit. Write 'Refs: <comma separated hashes of reverted commits>' in '[<optional footer>]'" >&2
+    echo -e "- revert \t\t... Use if you want to revert a commit. Write 'Refs: <comma separated hashes of reverted commits>' in the '[<optional footer>]'" >&2
     echo -e "- chore \t\t... Miscellaneous (should only be used for automatically generated commits)" >&2
 
     echo -e "\nNOTE: If your commit fits to more than one <type>, either" >&2
