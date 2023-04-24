@@ -1,15 +1,48 @@
 # Contributing to `<your repository name>`
 
 Thank you for considering contributing to `<your repository name>`, it means a lot to us!\
-Below are the most important guidelines to get you started.
+Below are the most important topics to get you started.
 
-- [Commit-Message-Guidelines](#commit-message-guidelines)
+- [Discussions](#discussions)
+- [Issue Labels](#issue-labels)
+- [Wiki](#wiki)
+- [Development Setup](#development-setup)
+- [Commit Message Convention](#commit-message-convention)
 
-## Commit Message Guidelines
+## Discussions
 
-We have precise rules over how our git commit messages must be formatted.\
+We use [GitHub Discussions](https://github.com/mhatzl/project-repo-template/discussions) for exchanges with the community.
+It is a good place to start if you have any questions.
+
+## Issue Labels
+
+There are two issue labels to help possible contributors to get involved.
+
+- `good first issue` ... This label is used to mark issues that should be easy to implement **without** extensive understanding of the project
+- `help-needed` ... This label is used to mark issues, where project members need help to resolve it
+
+## Commit Message Convention
+
+We have precise rules on how we write our git commit messages.\
 This leads to **more readable messages** that are easy to follow when looking through the **project history**.
 But also, we use git commit messages to automatically get a **change log** using [release-please](https://github.com/googleapis/release-please) from Google.
+
+**Note:** We use `squash merging` for pull requests, so we are able to correct your commit messages, but please try to stick to the convention to make merging easier for us.
+
+## Wiki
+
+We use the [GitHub Wiki](https://github.com/mhatzl/project-repo-template/wiki) for developer related information.
+For example, it contains project requirements, decision records, and views/models of the project.
+
+**Note:** Issues for the wiki must be created in this repository, but PRs are handled in a separate [GitHub repository](https://github.com/mhatzl/wiki-repo-template).  
+
+## Development Setup
+
+{{
+
+Provide instructions on how to set up this project for development.
+
+}}
 
 ### Commit Message Format
 
@@ -86,7 +119,7 @@ reference GitHub issues that this commit **Closes**.
 The rest of the commit message is then used for this.
 Also, adding exclamation mark after the commit type indicates breaking change, i.e. `feat!: introduce some new feature`.
 
-## Hooks
+### Hooks
 
 Git hooks help to write commit messages according to this convention.
 We provide our own commit-msg git hook pre-configured.
