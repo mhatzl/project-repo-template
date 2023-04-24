@@ -1,3 +1,4 @@
+# Action to handle CLAs on PRs
 # CLA action description: https://github.com/contributor-assistant/github-action
 name: "CLA Assistant"
 on:
@@ -7,11 +8,11 @@ on:
     types: [opened,closed,synchronize]
 
 jobs:
-  CLAAssistant:
+  cla-assistant:
     runs-on: ubuntu-latest
     steps:
       - name: "CLA Assistant"
-        if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read and understood the Contributor License Agreement and I hereby accept the Terms.') || github.event.issue.pull_request
+        if: github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read and understood the Contributor License Agreement and I hereby accept the Terms.' || github.event.issue.pull_request
         uses: contributor-assistant/github-action@v2.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
