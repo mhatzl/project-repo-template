@@ -16,23 +16,12 @@ print_help() {
 
     echo -e "\nWhere '<type>: <head description>' is not longer than 50 characters and <type> is one of:\n" >&2
 
-    echo -e "- feat \t\t\t... Use if commit adds a new feature" >&2
-    echo -e "- fix \t\t\t... Use if commit fixes a bug of any kind" >&2
-    echo -e "- depend \t\t... Use if commit makes changes to the external dependencies (e.g. adding/removing packages)" >&2
-    echo -e "- build \t\t... Use if commit affects the build system" >&2
-    echo -e "- perf \t\t\t... Use if commit only improves performance" >&2
-    echo -e "- ci \t\t\t\t... Use if commit makes changes to CI configuration files and/or scripts" >&2
-    echo -e "- test \t\t\t... Use if commit adds one ore more test cases" >&2
-    echo -e "- refactor \t... Use if commit makes semantic changes that neither fixes a bug nor adds a feature" >&2
-    echo -e "- style \t\t... Use if commit makes code changes that do not affect the semantic of the code" >&2
-    echo -e "- doc \t\t\t... Use if commit only adds or improves documentation" >&2
-    echo -e "- repo \t\t\t... Use if commit makes general changes to the repository (e.g. modify issue templates)" >&2
-    echo -e "- revert \t\t... Use if you want to revert a commit. Write 'Refs: <comma separated hashes of reverted commits>' in the '[<optional footer>]'" >&2
-    echo -e "- chore \t\t... Miscellaneous (should only be used for automatically generated commits)" >&2
+    echo -e "- feat \t\t... Use if commit adds a new feature" >&2
+    echo -e "- fix \t\t... Use if commit fixes a bug of any kind" >&2
+    echo -e "- arch \t\t... Use if commit neither adds features nor fixes bugs (e.g. renaming or restructuring)" >&2
+    echo -e "- chore \t... Miscellaneous (should only be used for automatically generated commits)" >&2
 
-    echo -e "\nNOTE: If your commit fits to more than one <type>, either" >&2
-    echo -e "- split commit if commit fits to two or more of types: feat, fix, depend, build, or perf." >&2
-    echo -e "- otherwise, choose the first one that fits starting from the top of the list above.\n" >&2
+    echo -e "\nNOTE: If your commit fits to types 'feat' and 'fix', try to split your commit." >&2
 
     echo -e "NOTE: <type> may be immediately followed by a '!' to indicate breaking changes." >&2 
     echo -e "NOTE: Use '!' instead of writing 'BREAKING CHANGE: <decsription>' in the '[<optional footer>]'.\n" >&2
@@ -48,7 +37,7 @@ RED="\033[31m"
 YELLOW="\033[33m"
 CLEAR="\033[0m"
 
-if ! head -1 "$1" | grep -qE "^(feat|fix|depend|build|perf|ci|test|refactor|style|doc|repo|revert|chore)[!]?: .{1,}$"; then
+if ! head -1 "$1" | grep -qE "^(feat|fix|arch|chore)[!]?: .{1,}$"; then
     echo -e "${RED}\nERROR: Given commit type is wrong!${CLEAR}\n" >&2
     print_help true
 
