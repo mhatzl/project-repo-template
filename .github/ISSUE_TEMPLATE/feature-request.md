@@ -2,7 +2,7 @@
 name: Feature Request
 about: Tell us about a feature you need.
 title: "[REQ] "
-labels: ''
+labels: ["waiting-on-assignee", "req-missing-wiki-entry"]
 assignees: ''
 
 ---

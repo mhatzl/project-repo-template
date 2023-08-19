@@ -2,7 +2,7 @@
 name: Improve Documentation
 about: Is there something you do not understand?
 title: "[DOC] "
-labels: ''
+labels: ["waiting-on-assignee"]
 assignees: ''
 
 ---

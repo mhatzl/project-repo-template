@@ -2,7 +2,7 @@
 name: Warn Us
 about: Warn us about a possible problem.
 title: "[WARN] "
-labels: ''
+labels: ["waiting-on-assignee"]
 assignees: ''
 
 ---

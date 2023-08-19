@@ -2,7 +2,7 @@
 name: Add Test
 about: Propose a new test case.
 title: "[TEST] "
-labels: ''
+labels: ["waiting-on-assignee"]
 assignees: ''
 
 ---

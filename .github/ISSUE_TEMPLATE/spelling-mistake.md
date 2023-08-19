@@ -2,7 +2,7 @@
 name: Spelling Mistake
 about: Help us improve our spelling.
 title: "[SPELL] "
-labels: ''
+labels: ["waiting-on-assignee", "good-first-issue"]
 assignees: ''
 
 ---
