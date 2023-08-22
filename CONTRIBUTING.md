@@ -4,7 +4,7 @@ Thank you for considering contributing to `<your repository name>`, it means a l
 Below are the most important topics to get you started.
 
 - [Discussions](#discussions)
-- [Issue Labels](#issue-labels)
+- [Issue/PR Labels](#issuepr-labels)
 - [Wiki](#wiki)
 - [Development Setup](#development-setup)
 - [Commit Message Convention](#commit-message-convention)
@@ -14,12 +14,24 @@ Below are the most important topics to get you started.
 We use [GitHub Discussions](https://github.com/mhatzl/project-repo-template/discussions) for exchanges with the community.
 It is a good place to start if you have any questions.
 
-## Issue Labels
+## Issue/PR Labels
 
-There are two issue labels to help possible contributors to get involved.
+There are two labels to help possible contributors to get involved:
 
 - [good-first-issue](https://github.com/mhatzl/project-repo-template/labels/good-first-issue) ... This label is used to mark issues that should be easy to implement **without** extensive understanding of the project
 - [help-needed](https://github.com/mhatzl/project-repo-template/labels/help-needed) ... This label is used to mark issues, where project members need help to resolve it
+
+For better asynchronous communication, we use the following labels:
+
+- [waiting-on-assignee](https://github.com/mhatzl/project-repo-template/labels/waiting-on-assignee) ... This label is used to indicate that the author or reviewer is awaiting response from the assignee
+- [waiting-on-author](https://github.com/mhatzl/project-repo-template/labels/waiting-on-author) ... This label is used to indicate that the assignee or reviewer is awaiting response from the author
+- [waiting-on-reviewer](https://github.com/mhatzl/project-repo-template/labels/waiting-on-reviewer) ... This label is used to indicate that the assignee or author is awaiting response from the reviewer
+
+To keep track of feature requests, we use the following labels:
+
+- [declined](https://github.com/mhatzl/project-repo-template/labels/declined) ... This label is used to mark issues/PRs that they won't be considered/implemented further
+- [req-missing-wiki-entry](https://github.com/mhatzl/project-repo-template/labels/req-missing-wiki-entry) ... This label is used to mark `[REQ]` issues that there is not yet a related entry in the wiki
+- [req-ready](https://github.com/mhatzl/project-repo-template/labels/req-ready) ... This label is used to mark `[REQ]` issues that they have enough information to be implemented
 
 ## Wiki
 
@@ -117,3 +129,13 @@ We provide our own git hooks in the [.hooks](.hooks/) directory to help write co
 To use our `commit-msg` git hook, copy the [commit-msg file](.hooks/commit-msg) into your `.git/hooks/` directory.
 Alternatively set our [.hooks](.hooks/) directory as your global git hooks directory with the following shell command: 
 `git config core.hooksPath ./.hooks`
+
+## Pull Requests
+
+Create a pull request (PR) if you want to integrate your changes.
+In most cases you want to set `main` as the target branch.
+
+The title of the PR must be written like a commit message.
+The section [commit message convention](#commit-message-convention) above describes how these messages should be written.
+
+**Note:** You must create a PR in the [wiki repository](https://github.com/mhatzl/wiki-repo-template) if you want to make changes to the wiki.
