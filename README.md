@@ -2,7 +2,7 @@
 
 Repository template for software projects.
 
-**Steps to adopt this template.**
+**Steps to adapt this template.**
 
 1. Change the link in [bug-report-form.yml](/.github/ISSUE_TEMPLATE/bug-report-form.yml) to point to your Code of Conduct
 1. Change the link in [config.yml](/.github/ISSUE_TEMPLATE/config.yml) to point to your dicussions-page
@@ -11,6 +11,7 @@ Repository template for software projects.
 1. Change the contact details in the [Code of Conduct](/CODE_OF_CONDUCT#enforcement)
 1. Create and link your own wiki to this project repository using the [wiki-repo-template](https://github.com/mhatzl/wiki-repo-template)
 1. Adapt the [contributing](/CONTRIBUTING) section
+1. Optional: Change the license of the project
 1. Adapt this README
 
 ## Wiki Template
