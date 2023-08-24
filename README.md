@@ -7,7 +7,7 @@ Repository template for software projects.
 1. Change the link in [bug-report-form.yml](/.github/ISSUE_TEMPLATE/bug-report-form.yml) to point to your Code of Conduct
 1. Change the link in [config.yml](/.github/ISSUE_TEMPLATE/config.yml) to point to your dicussions-page
 1. Adopt the [release please action](/.github/workflows/release-please.yml)
-1. Adopt the Definition of Done in the pull request template
+1. Adopt the Definition of Done in the [pull request template](/.github/pull_request_template.md)
 1. Change the contact details in the [Code of Conduct](/CODE_OF_CONDUCT#enforcement)
 1. Create and link your own wiki to this project repository using the [wiki-repo-template](https://github.com/mhatzl/wiki-repo-template)
 1. Adopt the [contributing](/CONTRIBUTING) section
