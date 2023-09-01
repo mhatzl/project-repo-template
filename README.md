@@ -30,7 +30,6 @@ Some sections also include example content that is given inside `[[ ]]` blocks.
 
 This template already contains the following GitHub actions:
 
-- `auto-lock-prs` ... Used to lock PRs once they are closed
 - `release-please` ... Uses Google's [release please](https://github.com/google-github-actions/release-please-action) action to generate releases automatically
 
   **Note:** You should adapt this action according to your needs.
